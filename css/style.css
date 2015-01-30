@@ -1,4 +1,138 @@
-/* Styles go here */
+@import url(../maps.css);
+
+path {
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
+  animation: movePath 170s;
+  animation-delay: 68s;
+}
+
+@keyframes movePath {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+.outline {
+  pointer-events: all;
+  cursor: move;
+}
+
+.graticule, .outline {
+  stroke: #ccc;
+  stroke-opacity: 0;
+  fill: none;
+}
+
+.front {
+  stroke: none;
+  fill: #E35F1C;
+  fill-opacity: .85;
+}
+
+.back {
+  stroke: none;
+  fill: red;
+}
+
+.original-kind-of {
+    animation: originalKindOf linear 310s;
+    animation-iteration-count: infinite;
+    transform-origin: 50% 50%;
+    -webkit-animation: originalKindOf linear 310s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-transform-origin: 50% 50%;
+    -moz-animation: originalKindOf linear 310s;
+    -moz-animation-iteration-count: infinite;
+    -moz-transform-origin: 50% 50%;
+    -o-animation: originalKindOf linear 310s;
+    -o-animation-iteration-count: infinite;
+    -o-transform-origin: 50% 50%;
+    -ms-animation: originalKindOf linear 310s;
+    -ms-animation-iteration-count: infinite;
+    -ms-transform-origin: 50% 50%;
+}
+
+@keyframes movePath {
+  to {
+    stroke-dashoffset: 10;
+  }
+}
+
+@keyframes originalKindOf{
+    0% {
+        opacity:0;
+        transform:  ;
+    }
+    49% {
+        opacity:0.6;
+        transform:  ;
+    }
+    100% {
+        opacity:0;
+        transform:  ;
+    }
+}
+
+@-moz-keyframes originalKindOf{
+    0% {
+        opacity:0;
+        -moz-transform:  ;
+    }
+    49% {
+        opacity:0.6;
+        -moz-transform:  ;
+    }
+    100% {
+        opacity:0;
+        -moz-transform:  ;
+    }
+}
+
+@-webkit-keyframes originalKindOf {
+    0% {
+        opacity:0;
+        -webkit-transform:  ;
+    }
+    49% {
+        opacity:0.6;
+        -webkit-transform:  ;
+    }
+    100% {
+        opacity:0;
+        -webkit-transform:  ;
+    }
+}
+
+@-o-keyframes originalKindOf {
+    0% {
+        opacity:0;
+        -o-transform:  ;
+    }
+    49% {
+        opacity:0.6;
+        -o-transform:  ;
+    }
+    100% {
+        opacity:0;
+        -o-transform:  ;
+    }
+}
+
+@-ms-keyframes originalKindOf {
+    0% {
+        opacity:0;
+        -ms-transform:  ;
+    }
+    49% {
+        opacity:0.6;
+        -ms-transform:  ;
+    }
+    100% {
+        opacity:0;
+        -ms-transform:  ;
+    }
+}
 
 /* see the fancy panel in top left corner? well, the css below is what makes it look the way it does so you might want to change it but really, is there any point in doing it? */
 
